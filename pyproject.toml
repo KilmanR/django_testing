@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 88
+target-version = "py314"         # под версию Python в venv (сейчас 3.14)
+exclude = ["migrations"]         # миграции Django — сгенерированный код, не линтим
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]         # ошибки, unused, сортировка импортов
+
+[tool.ruff.lint.per-file-ignores]
+"settings.py" = ["E501"]        # по имени файла — сработает в любом проекте, где бы ни лежал
+"urls.py" = ["I001"]            # стартовый шаблон преподавателя — не правим
+"admin.py" = ["F401"]           # стартовый шаблон преподавателя — не правим

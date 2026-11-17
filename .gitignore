@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+db.sqlite3
+.metrics/
+.pytest_cache/
+.ruff_cache/
+git_python_cheatsheet.md
