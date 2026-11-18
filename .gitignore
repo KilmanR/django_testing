@@ -7,4 +7,5 @@ db.sqlite3
 .metrics/
 .pytest_cache/
 .ruff_cache/
+target/
 git_python_cheatsheet.md
